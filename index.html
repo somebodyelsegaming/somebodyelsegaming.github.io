@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Somebody Else Gaming - Kingshot Tools</title>
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #ffffff; --text: #1b1f24; --muted: #5b6470;
+    --line: #d9dde3; --accent: #2563eb; --accent-soft: #e8efff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #111418; --card: #1a1f25; --text: #e6e9ed; --muted: #9aa4b0;
+      --line: #2c333c; --accent: #6b9bff; --accent-soft: #1c2a45;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { font-size: 1.4rem; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 20px; font-size: .9rem; }
+  .tools { display: grid; gap: 12px; }
+  a.card {
+    display: block; background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    padding: 16px; color: inherit; text-decoration: none;
+  }
+  a.card:hover, a.card:focus-visible { border-color: var(--accent); background: var(--accent-soft); }
+  a.card b { display: block; color: var(--accent); margin-bottom: 4px; }
+  a.card span { color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Kingshot Tools</h1>
+  <p class="sub">Free calculators and planners for Kingshot.<br>Built by Somebody Else, the gnome you know.</p>
+
+  <div class="tools">
+    <a class="card" href="https://somebodyelsegaming.github.io/ks-joiner-calc/">
+      <b>Rally Joiner Calculator</b>
+      <span>Pick the lead heroes for a rally or garrison. Shows which four joiners add the most, and why.</span>
+    </a>
+    <a class="card" href="https://somebodyelsegaming.github.io/ks-am-troop-training/">
+      <b>Alliance Mobilization Troop Training Calculator</b>
+      <span>How many troops to train or promote at each camp to finish a mobilization task.</span>
+    </a>
+    <a class="card" href="https://somebodyelsegaming.github.io/ks-vikings-calc/">
+      <b>Vikings Reinforcement Calculator</b>
+      <span>How to fill each reinforcement march, and whether all your infantry can go out.</span>
+    </a>
+    <a class="card" href="https://somebodyelsegaming.github.io/pet-material-planner/">
+      <b>Pet Material Planner</b>
+      <span>Which pet Advances your materials can reach, and how many Pet Chests to open.</span>
+    </a>
+    <a class="card" href="https://ttg-planner.streamlit.app/">
+      <b>TTG Refinement Planner</b>
+      <span>Plan your Tempered True Gold refinement with odds from simulated runs.</span>
+    </a>
+  </div>
+</main>
+</body>
+</html>
